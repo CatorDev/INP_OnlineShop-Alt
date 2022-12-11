@@ -25,6 +25,8 @@ let recordToHTML = record => {
 
     html = html.replaceAll("${tagline}", fields[0]);
     html = html.replaceAll("${beschreibung}", fields[1]);
+    html = html.replaceAll("${menge}", fields[2]);
+    html = html.replaceAll("${preis}", fields[3]);
     return html;
 }
 
